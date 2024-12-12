@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta name="format-detection" content="telephone=no, address=no, email=no">
+	<title>HYUNDAI Translead</title>
+    <!-- 개인설정 CSS -->
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <!--인풋 달력-->
+    <link rel="stylesheet" href="../css/jquery-ui.css" />
+    <link rel="stylesheet" href="../css/swiper.css" />
+
+    <!-- Jquery JS -->
+    <script  src="../js/jquery-latest.min.js"></script>
+    <script  src="../js/swiper.js"></script>
+
+    <!-- 개인설정 JS -->
+    <script src="../js/common.js"></script>
+    <!--인풋 달력-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
+    <script src="../js/jquery.bpopup.min.js"></script>
+</head>
+<body>
+<!-- container -->
+<div class="container" id="main" >
+    <!-- header -->
+    <div class="header">
+        <div class="header_back"></div>
+      <div class="header_logo">
+            <h1>
+                <a href="../main.html"><img src="../images/main/logo_hyundai2.png" alt="LOGO"></a>
+            </h1>
+      </div>
+      <div class="header_nav" onclick="openNav()"></div>
+      <div id="mySidenav" class="sidenav">
+        <div class="sidenav_wrap">
+            <p><img src="../images/main/logo_hyundai2.png" alt="LOGO"></p>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+          <a href="#"><div>Vehicle Dashboard</div></a>
+          <a href="#"><div>Vehicle Maintenance</div></a>
+          <a href="#"><div>Vehicle Register</div></a>
+          </div>
+       </div>
+    </div>
+    <!-- header end -->
+    <!-- content -->
+    <div class="content">
+        <!-- cont_header -->       
+        <div class="cont_header">Maintenance Management</div>
+        <!-- sub_header -->
+        <div class="fl_l  sub_header">Information</div>
+        <!-- 버튼-->
+        <div class="mobile_search">
+        <div class="main_bt10">SEARCH</div>
+        </div>
+
+        <!-- sub_search_box -->
+        <div class="sub_search_box">
+            <!-- form-->
+            <div class="sub_list">
+                <table class="table_style3">
+                    <tr>
+                        <th class="we30">Nickname</th>          
+                        <td class="we70"><input type="text" class="form-control we100" value="sam" /></td>
+                    </tr>
+                    <tr>
+                        <th class="we30">Type of Maintenance</th>          
+                        <td class="we70"><input type="text" class="form-control we100" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th class="we30">Mileage</th>          
+                        <td class="we70"><input type="text" class="form-control we100" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th class="we30">Fuel Cost</th>          
+                        <td class="we70">
+                            <input type="text" class="form-control we57 fl_l" value="" />
+                            <select name="Area" class="we40 fl_r">
+                                <option>USD</option>
+                                <option>MXN</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="we30">Vendor</th>          
+                        <td class="we70">
+                            <select name="Area" class="we100">
+                                <option>- ALL -</option>
+                                <option>Monor</option>
+                                <option>Other</option>
+                            </select>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th class="we30">Invoice File</th>          
+                        <td class="we70"><input type="text" class="form-control we100" value="" /></td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2" class="we30">Perform Schedule</th>          
+                        <td class="we70"><input type="text" id="datepicker1" class="form-control we100 datepicker1 we45 fl_l">  </td>
+                    </tr>
+                    <tr>    
+                        <td class="we70"><input type="text" id="datepicker2" class="form-control we100 datepicker2 we45 fl_l"></td>
+                    </tr>            
+                    <tr>
+                        <th class="we30">Remarks</th>          
+                        <td class="we70"><input type="text" class="form-control we100" value="" /></td>
+                    </tr>               
+                </table>
+            </div>
+            <!-- form 끝-->
+            <!-- 버튼-->
+            <div class="btns_wrap">
+                <div class="btns_top2">
+                    <div class="main_bt3">SEARCH</div>
+                </div>
+            </div>
+            <!-- 버튼 끝-->
+        </div>
+        <!-- sub_search_box end-->
+        <div class="sub_panel_box sub_panel_side">
+            <ul class="sub_list_table">
+                <li>
+                    <div class="idx_box">
+                        <p class="ck_type1"><input type="checkbox"  id="#"/></p>
+                        
+                    </div>
+                    <a href="#" class="title_box">
+                        <span class="type">1</span>
+                        <span class="title">My sonata</span>
+                        <span class="date">Normal</span>
+                    </a>
+                    <div class="info_box">
+                        <p><b>Type</b>Rosarito</p>
+                        <p><b>Mileage</b>7SDS998</p>
+                        <p><b>Vendor</b>Sonata</p>
+                        <p><b>Cost</b>White</p>
+                        <p><b>Invoice</b>5</p>
+                        <p><b>Remarks</b>2500</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="idx_box">
+                        <p class="ck_type1"><input type="checkbox"  id="#"/></p>
+                    </div>
+                    <a href="#" class="title_box">
+                        <span class="type">2</span>
+                        <span class="title">My van2</span>
+                        <span class="date">Normal</span>
+                    </a>
+                    <div class="info_box">
+                        <p><b>Type</b>Rosarito</p>
+                        <p><b>Mileage</b>7SDS998</p>
+                        <p><b>Vendor</b>Sonata</p>
+                        <p><b>Cost</b>White</p>
+                        <p><b>Invoice</b>5</p>
+                        <p><b>Remarks</b>2500</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="idx_box">
+                        <p class="ck_type1"><input type="checkbox"  id="#"/></p>
+                    </div>
+                    <a href="#" class="title_box">
+                        <span class="type">3</span>
+                        <span class="title">My sonata3</span>
+                        <span class="date">Shuttle</span>
+                    </a>
+                    <div class="info_box">
+                        <p><b>Type</b>Rosarito</p>
+                        <p><b>Mileage</b>7SDS998</p>
+                        <p><b>Vendor</b>Sonata</p>
+                        <p><b>Cost</b>White</p>
+                        <p><b>Invoice</b>5</p>
+                        <p><b>Remarks</b>2500</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="idx_box">
+                        <p class="ck_type1"><input type="checkbox"  id="#"/></p>
+                    </div>
+                    <a href="#" class="title_box">
+                        <span class="type">4</span>
+                        <span class="title">My sonata3</span>
+                        <span class="date">Shuttle</span>
+                    </a>
+                    <div class="info_box">
+                        <p><b>Type</b>Rosarito</p>
+                        <p><b>Mileage</b>7SDS998</p>
+                        <p><b>Vendor</b>Sonata</p>
+                        <p><b>Cost</b>White</p>
+                        <p><b>Invoice</b>5</p>
+                        <p><b>Remarks</b>2500</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="main_bt9">MORE</div>
+        </div>
+        <!-- 버튼-->
+        <div class="btns_wrap">
+            <div class="btns_top">
+                <div class="fl_l main_bt3 we31 mr8">ADD</div>
+                <div class="fl_l main_bt5 we31 mr8">DELETE</div>                
+                <div class="fl_l main_bt1 we32 ">UPDATE</div>
+            </div>
+       </div>
+    </div>
+    <!-- content end -->
+    <div onclick="topFunction()" id="topup"></div>
+    <!-- copyright -->
+    <div class="copyright">Copyright © 2018 HYUNDAI Translead.<br> All Rights Reserved.</div>
+    <!-- copyright end-->
+</div>
+<!-- container end -->    	
+</body>
+</html>

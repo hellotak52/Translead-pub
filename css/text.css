@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* fonts */
+/* 한글 HyundaiSansHead */
+@font-face {
+    font-family: "HeadBold";
+    src: url("../font/HyundaiSansHeadKRBold.eot");
+    src: url("../font/HyundaiSansHeadKRBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansHeadKRBold.woff2") format("woff2"),
+    url("../font/HyundaiSansHeadKRBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HeadLight";
+    src: url("../font/HyundaiSansHeadKRLight.eot");
+    src: url("../font/HyundaiSansHeadKRLight.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansHeadKRLight.woff2") format("woff2"),
+    url("../font/HyundaiSansHeadKRLight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HeadRegular";
+    src: url("../font/HyundaiSansHeadKRRegular.eot");
+    src: url("../font/HyundaiSansHeadKRRegular.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansHeadKRRegular.woff2") format("woff2"),
+    url("../font/HyundaiSansHeadKRRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HeadMedium";
+    src: url("../font/HyundaiSansHeadKRMedium.eot");
+    src: url("../font/HyundaiSansHeadKRMedium.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansHeadKRMedium.woff2") format("woff2"),
+    url("../font/HyundaiSansHeadKRMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* 한글 HyundaiSansText */
+@font-face {
+    font-family: "TextBold";
+    src: url("../font/HyundaiSansTextKRBold.eot");
+    src: url("../font/HyundaiSansTextKRBold.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansTextKRBold.woff2") format("woff2"),
+    url("../font/HyundaiSansTextKRBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextMedium";
+    src: url("../font/HyundaiSansTextKRMedium.eot");
+    src: url("../font/HyundaiSansTextKRMedium.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansTextKRMedium.woff2") format("woff2"),
+    url("../font/HyundaiSansTextKRMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextRegular";
+    src: url("../font/HyundaiSansTextKRRegular.eot");
+    src: url("../font/HyundaiSansTextKRRegular.eot?#iefix") format("embedded-opentype"),
+    url("../font/HyundaiSansTextKRRegular.woff2") format("woff2"),
+    url("../font/HyundaiSansTextKRRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}

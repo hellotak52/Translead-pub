@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="Robots" content="ALL">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="viewport" content="width=device-width, initial-scale=0.34, maximum-scale=1, user-scalable=yes">
+<meta name="description" content="" />
+<meta name="author" content="" />
+
+
+<title>HYUNDAI Translead</title>
+
+<!-- 개인설정 CSS -->
+<link rel="stylesheet" href="../css/style.css" />
+<!--인풋 달력-->
+<link rel="stylesheet" href="../css/jquery-ui.css" />
+<link rel="stylesheet" href="../css/swiper.css" />
+
+<!-- Jquery JS -->
+<script  src="../js/jquery-latest.min.js"></script>
+<script  src="../js/swiper.js"></script>
+
+<!-- 개인설정 JS -->
+<script src="../js/common.js"></script>
+<!--인풋 달력-->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+
+<script src="../js/jquery.bpopup.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- header -->
+<div class="header">
+    <!-- header_top -->
+    <div class="header_top">
+        <div class="customer">
+            <div class="customer_wrap">
+                <span class="fccc mr5 mt15 fl_l">Team Manager /</span>
+                <span class="fc33 mr7 mt15 fl_l">Gabino Maclashlon Better Half</span>
+                <div onclick="location.href='login.html'" class="main_bt7">LOGOUT</div>
+                <div class="select_box">
+                    <a href="#" class="btn_value">Language</a>
+                    <span class="icon"></span>
+                    <div class="select_list">
+                        <a href="#">English</a>
+                         <a href="#">Spanish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navi -->
+    <div class="navi">
+        <h1>
+            <a href="../main.html"><img src="../images/main/logo_hyundai2.png" alt="LOGO"></a>
+        </h1>
+        <ul class="menu">           
+            <li class="level1"><a href="../construction/dashboard.html"><h2>CONSTRUCTION</h2></a></li>
+            <li class="level1"><a href="../contract/dashboard.html"><h2>CONTRACT</h2></a></li>
+            <li class="level1"><a href="../inventory/dashboard.html"><h2>INVENTORY</h2></a></li>
+            <li class="level1"><a href="../vehicle/dashboard.html"><h2>VEHICLE</h2></a></li>
+            <li class="level1"><a href="../vistior/dashboard.html"><h2>VISITOR</h2></a></li>
+            <li class="level1"><a href="../system/dashboard.html"><h2>SYSTEM</h2></a></li>
+        </ul>
+    </div>
+</div>
+<!-- header end -->
+<!-- container -->
+<div class="container">
+    <!-- leftmenu -->
+    <div class="leftmenu">
+        <h1 class="depth1">CONSTRUCTION <br>MANAGEMENT</h1>
+        <h2 class="depth2 he1000 ">
+            <ul>
+            <li><p>Dashboard</p></li>
+            <li><p>Inquiry Work Order</p></li>
+            <li><p>Request Work Order</p></li>
+            <li><p>Inquiry Project</p></li>
+            <li class="on"><p>Define Project</p></li>
+            </ul>
+        </h2>  
+    </div>
+    <!-- leftmenu end -->
+    <!-- content -->
+    <div class="content">
+       <!-- title -->
+        <div class="cont_header">
+            <p class="titlel">Define Project</p>
+            <p class="titler"><img src="../images/icon/home.png" alt="LOGO"> > Construction > Define Project</p>
+        </div>
+       <!-- 버튼-->
+       <div class="btns_top">
+            <div class="btnl">
+               <div class="btns main_bt3">◀ PREVIOUS</div>
+               <div class="btns main_bt3">NEXT ▶</div>                     
+           </div>
+            <div class="btnr">
+                <div class="btns main_bt5">CANCEL</div>
+                <div class="btns main_bt1">SAVE</div>
+            </div>
+        </div>
+        <!-- 탭-->
+        <div class="sub_tab">
+            <ul>
+                <li class="on"><a href="">Define Project</a></li>
+                <li><a href="">Request Budget</a></li>
+                <li><a href="" class="lh">Bidding</a></li>
+                <li><a href="" class="lh">Proposal PO</a></li>
+                <li><a href="">Execution & Permit</a></li>
+                <li><a href="">Pamenet Proposal</a></li>
+                <li><a href="">Report Process</a></li>
+                <li><a href="">Termination Report</a></li>
+                <li><a href="" class="lh">Summary</a></li>
+            </ul>
+        </div>
+        <!-- 탭  끝-->
+        <div class="tab_box">
+           <!-- 검색-->
+                <div class="sub_header">Define Project</div>
+            <!-- 검색  끝-->
+            <!-- form-->
+            <div class="sub_list">
+                <div class="bor_t2 fl_r">
+                    <table class="table_style2">
+                        <tr>
+                            <th class="we12">Project ID</th>          
+                            <td class="we20"><input type="text" class="form-control2 we100" value="P01ABM0001" /></td>
+                            <th class="we12">Project Title</th>          
+                            <td class="we20"><input type="text" class="form-control we100" value="" /></td>
+                        </tr>
+                        <tr>
+                            <th>Sub No</th>          
+                            <td><input type="text" class="form-control2 we100" value="" /></td>
+                            <th>Sub Project Title</th>          
+                            <td><input type="text" class="form-control2 we100" value="" /></td>
+                        </tr>
+                        <tr>
+                            <th>Work Order ID</th>          
+                            <td><input type="text" class="form-control we100" value="" /></td>
+                            <th>Date</th>          
+                            <td>
+                                <input type="text" id="datepicker1" class="form-control datepicker1 we45 fl_l"  /><span class="lh32">~</span>
+                                <input type="text" id="datepicker2" class="form-control datepicker2 we45 fl_r"  />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Execution Department</th>
+                            <td>
+                                <select name="Area" class="we100">
+                                <option>- ALL -</option>
+                                <option>- ALL -</option>
+                                </select>
+                            </td>
+                            <th>Req. Department</th>
+                            <td><input type="text" class="form-control2 we100" value="Purchasing" /></td>
+                        </tr>
+                        <tr>
+                            <th>cost</th>
+                            <td>
+                                <input type="text" class="form-control fl_l we68" value="$40" />
+                                <div class="fl_r main_bt3">USD</div>
+                            </td>
+                            <th rowspan="2">Document</th>
+                            <td>
+                                <input type="text" class="form-control2 fl_l we100" value="aa.pdf" />
+                            </td>
+                        </tr>
+                        <tr>                                            
+                            <th rowspan="3">Description</th>
+                            <td rowspan="3">
+                                <textarea name="Description" ></textarea></td>
+                            <td>
+                                <input type="text" class="form-control2 fl_l we100" value="aa.pdf" />
+                            </td>
+                        </tr> 
+                        <tr>                                            
+                            <th rowspan="2">Upload File</th>
+                            <td>
+                                <input type="text" class="form-control fl_l we68" value="aa.pdf" />
+                                <div class="fl_r main_bt3">UPLOAD</div>
+                            </td>
+                        </tr>           
+                        <tr>
+                            <td>
+                                <input type="text" class="form-control fl_l we68" value="aa.pdf" />
+                                <div class="fl_r main_bt3">UPLOAD</div>
+                            </td>
+                        </tr>   
+                    </table>
+                </div>
+            </div>
+            <!-- form 끝-->
+          
+           <div class="btns_top">
+                <div class="btnr">
+                    <div class="btns main_bt8">+</div>
+                    <div class="btns main_bt8">-</div>
+                </div>
+            </div>
+            <!-- list-->
+            <div class="sub_list mt5">
+                <div class="bor_t2 fl_r">
+                    <table class="table_style1">
+                        <tr>
+                            <th rowspan="4" class="we15">Notify Status Of The Project</th>
+                            <th class="we5 ck_type1"><input type="checkbox"  id="#"/></th>          
+                            <th class="we30">Name</th>
+                            <th class="we30">E-mail</th>
+                                                             
+                        </tr>
+                        <tr>
+                            <td class="ck_type1"><input type="checkbox"  id="#"/></td>
+                            <td><input type="text" class="form-control we100" value="" /></td>
+                            <td><input type="text" class="form-control we100" value="" /></td>                              
+                        </tr>
+                        <tr>
+                            <td class="ck_type1"><input type="checkbox"  id="#"/></td>
+                            <td><input type="text" class="form-control we100" value="" /></td>
+                            <td><input type="text" class="form-control we100" value="" /></td>                              
+                        </tr>
+                        <tr>
+                            <td class="ck_type1"><input type="checkbox"  id="#"/></td>
+                            <td><input type="text" class="form-control we100" value="" /></td>
+                            <td><input type="text" class="form-control we100" value="" /></td>                              
+                        </tr>
+                      
+
+                    </table>
+                </div>
+            </div>
+            <!-- list 끝-->
+        </div>
+        <!-- 탭박스 끝-->
+    </div>
+    <!-- content end -->
+</div>
+<!-- container end -->
+<!-- copyright -->
+<div class="copyright">Copyright © 2018 HYUNDAI Translead. All Rights Reserved.</div>
+
+
+
+</body>
+</html>
